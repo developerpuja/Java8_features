@@ -18,7 +18,6 @@ public class ForEachMethodExample implements InterfaceTest{
 		int count2 = 1;
 		for (int i = 0; i<5;i++) {
 			System.out.println(count2++);
-			
 		}
 		
 	}

@@ -1,6 +1,5 @@
 package com.java.string.programs;
 
-import java.util.Iterator;
 
 public class CountWordsFromString {
 	/**

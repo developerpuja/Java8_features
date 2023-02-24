@@ -11,13 +11,13 @@ public class FindDuplicatesinString {
 		//String 
 		
 		Map<String, Integer> stringCount = new HashMap<>();
-		
+	
 		for(int i = 0; i < inputString.length(); i++) {
 			String key = inputString.charAt(i)+"";
 			if(stringCount.containsKey(key)) {
 				stringCount.put(key, stringCount.get(key)+1);
 				
-			} else {
+			} else if(!key.equals(" ")){
 				stringCount.put(key, 1);
 			}
 			

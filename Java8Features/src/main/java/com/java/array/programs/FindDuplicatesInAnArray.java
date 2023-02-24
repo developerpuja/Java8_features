@@ -31,6 +31,7 @@ public class FindDuplicatesInAnArray {
 		// 1. by sorting method
 		
 		Arrays.sort(shuffledArray);
+		
 		for(int i = 0; i< shuffledArray.length-1; i++) {
 			if(shuffledArray[i] == shuffledArray[i+1]) {
 				System.out.println("Sort:Duplicate element found:"+ shuffledArray[i+1]);
