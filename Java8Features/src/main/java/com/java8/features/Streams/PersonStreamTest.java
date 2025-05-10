@@ -22,7 +22,7 @@ public class PersonStreamTest {
 		listPerson.add(p2);
 		listPerson.add(p1);
 		
-		List<Person> female = listPerson.stream().filter(person-> person.getGender().equalsIgnoreCase("female")).toList();
+		List<Person> female = listPerson.stream().filter(person-> person.getGender().equalsIgnoreCase("female")).collect(Collectors.toList());
 		//List<Person> sorted = listPerson.stream().sorted(Comparator.comparing(Person:: getAge));
 		
 		//sortedByAge=list.stream().sorted(Comparator.comparing(Person::getAge)).collect(Collectors.toList());
